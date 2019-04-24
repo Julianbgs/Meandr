@@ -1,0 +1,40 @@
+section.callback
+    .container
+        h3.callback__title
+            | Теперь расскажите о себе
+
+        form.callback__form
+            label.callback__label
+                | Фамилия и имя
+                .callback__wrap
+                    span.callback__num
+                        | 1
+
+            input(type='text' value='Сидоров Александр').callback__input
+
+            label.callback__label
+                | Электронная почта
+                .callback__wrap
+                    span.callback__num
+                        | 2
+
+            input(type='email' value='Sidorov@yandex.ru').callback__input
+
+            label.callback__label
+                | Телефон
+                .callback__wrap
+                    span.callback__num
+                        | 3
+
+            input(type='phone' value='+7 (999)-328-14-20').callback__input
+
+            label.callback__label
+                | Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?
+                .callback__wrap
+                    span.callback__num
+                        | 4
+
+            textarea(placeholder='Свой проект по созданию универсальной инфраструктуры строительства').callback__input
+
+            button(type='submit').callback__submit
+                | Отправить

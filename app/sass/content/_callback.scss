@@ -1,0 +1,113 @@
+.callback {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #161616;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+
+  @include breakpoint(max-width 700px) {
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    position: relative;
+    margin-top: 100px;
+    font-family: $DINPro;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    font-weight: 200;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+
+    @include breakpoint(max-width 700px) {
+      font-size: 30px;
+    }
+  }
+
+  &__form {
+    position: relative;
+    width: 100%;
+    padding: 0 400px;
+    box-sizing: border-box;
+
+    @include breakpoint(max-width 700px) {
+      padding: 0 0 0 80px;
+    }
+  }
+
+  &__wrap {
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 32px;
+    width: 64px;
+    height: 64px;
+    top: -21px;
+    left: -100px;
+  }
+
+  &__num {
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    text-align: center;
+    color: #F47821;
+    top: 20px;
+    left: 26px;
+  }
+
+  &__label {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.01em;
+    font-family: $DINPro;
+    color: #FFFFFF;
+  }
+
+  &__input {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: $Roboto;
+    margin-top: 24px;
+    margin-bottom: 64px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    opacity: 0.3;
+    border-bottom: 1px solid #F7F8FA;
+
+    @include breakpoint(max-width 700px) {
+      font-size: 16px;
+    }
+  }
+
+  &__submit {
+    position: relative;
+    width: 100%;
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 111px;
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: $Girloy;
+    line-height: normal;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #F47821;
+  }
+}
