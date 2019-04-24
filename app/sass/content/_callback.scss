@@ -89,6 +89,7 @@
     color: #FFFFFF;
     opacity: 0.3;
     border-bottom: 1px solid #F7F8FA;
+    resize: none;
 
     @include breakpoint(max-width 700px) {
       font-size: 16px;
@@ -110,4 +111,14 @@
     text-transform: uppercase;
     color: #F47821;
   }
+}
+
+.error {
+  border-bottom: 1px solid red;
+  border-radius: 10px;
+}
+
+.not_error {
+  border-bottom: 1px solid green;
+  border-radius: 10px;
 }

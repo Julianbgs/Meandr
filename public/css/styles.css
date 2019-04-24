@@ -644,6 +644,7 @@ textarea:active {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   opacity: 0.3;
   border-bottom: 1px solid #f7f8fa;
+  resize: none;
 }
 
 @media (max-width: 700px) {
@@ -667,6 +668,16 @@ textarea:active {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #f47821;
+}
+
+.error {
+  border-bottom: 1px solid red;
+  border-radius: 10px;
+}
+
+.not_error {
+  border-bottom: 1px solid green;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
