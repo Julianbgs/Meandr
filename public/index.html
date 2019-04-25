@@ -107,7 +107,7 @@
     <section class="callback">
       <div class="container">
         <h3 class="callback__title">Теперь расскажите о себе</h3>
-        <form class="callback__form">
+        <form id="callback-form" class="callback__form">
           <label class="callback__label">Фамилия и имя
             <div id="num_1" class="callback__wrap"><span class="callback__num">1</span></div>
           </label>
@@ -124,8 +124,13 @@
             <div id="num_4" class="callback__wrap"><span class="callback__num">4</span></div>
           </label>
           <textarea placeholder="Свой проект по созданию универсальной инфраструктуры строительства" id="contact-text" class="callback__input"></textarea>
-          <button type="submit" class="callback__submit">Отправить</button>
+          <button type="submit" id="submit" class="callback__submit">Отправить</button>
         </form>
+        <div class="modal">
+          <div class="modal__body"><span class="modal__close">x</span>
+            <h3 class="modal__title">Поздравляю, Вы успешно отправили форму!</h3>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer"></footer>

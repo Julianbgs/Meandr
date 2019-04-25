@@ -54,3 +54,25 @@ $('#contact-name, #contact-email, #contact-phone, #contact-text').unbind().blur(
     }
 
 });
+
+
+var modal = document.querySelector('.modal');
+var submit = document.querySelector('#submit');
+var close = document.querySelector('.modal__close');
+
+submit.addEventListener('click', function (e) {
+    e.preventDefault();
+    modal.setAttribute('style', 'z-index:9999; opacity: 1;');
+
+    close.addEventListener('click', function () {
+        modal.setAttribute('style', 'z-index: -1; opacity: 0;');
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.setAttribute("style", "z-index:-1; opacity: 0;");
+        }
+    });
+});
+
+

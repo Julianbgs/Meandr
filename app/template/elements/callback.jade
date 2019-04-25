@@ -3,7 +3,7 @@ section.callback
         h3.callback__title
             | Теперь расскажите о себе
 
-        form.callback__form
+        form.callback__form#callback-form
             label.callback__label
                 | Фамилия и имя
                 .callback__wrap#num_1
@@ -36,5 +36,12 @@ section.callback
 
             textarea(placeholder='Свой проект по созданию универсальной инфраструктуры строительства').callback__input#contact-text
 
-            button(type='submit').callback__submit
+            button(type='submit').callback__submit#submit
                 | Отправить
+
+        .modal
+            .modal__body
+                span.modal__close x
+
+                h3.modal__title
+                    | Поздравляю, Вы успешно отправили форму!
