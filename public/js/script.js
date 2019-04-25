@@ -76,9 +76,6 @@ function  flags() {
     if(flag === true && flag_1 === true && flag_2 === true && flag_3 === true) {
         submit.removeAttribute('disabled');
         console.log('enabled');
-    }else if (flag === undefined && flag_1 === undefined && flag_2 === undefined && flag_3 === undefined) {
-        submit.setAttribute('disabled', 'disabled');
-        console.log('disabled');
     }else {
         submit.setAttribute('disabled', 'disabled');
         console.log('disabled');
